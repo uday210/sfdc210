@@ -1,0 +1,6 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	
+    
+    <button class="slds-button slds-button--brand" onclick="{!c.downloadCsv}">Download Template</button> <br/><br/>
+ 
+</aura:component>

@@ -1,0 +1,15 @@
+<apex:page >
+<apex:outputPanel layout="block" style="overflow:auto; height:540px; width:500px; margin:0 1px">
+
+<chatter:feed entityId="{!$User.Id}"/>
+
+</apex:outputPanel>
+<script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+<script>
+
+jQuery('.feedsortby').find('li')[1].remove();
+</script>
+</apex:page>

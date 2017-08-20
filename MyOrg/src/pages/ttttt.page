@@ -1,0 +1,18 @@
+<apex:page showHeader="true" sidebar="true" standardController="Account" extensions="AB4CD.RuntimeExtension" rendered="{!Runtime.specialRender}">
+  <apex:form rendered="{!Runtime.renderClue}">
+    <AB4CD:Grid rendered="{!Runtime.isRender}">
+      <AB4CD:GridColumn title="New Column" span="1" rendered="{!Runtime.specialRender}">
+        <AB4CD:FileUploader title="Rich Text" rendered="{!Runtime.renderClue}" />
+        <AB4CD:LookupData ObjectId="{!Account.CreatedById}" Runtime="{!Runtime}" Title="Field Group" inlineEdit="false" FieldsList="" rendered="{!Runtime.isRender}" /></AB4CD:GridColumn>
+      <AB4CD:GridColumn title="New Column" span="1" rendered="{!Runtime.specialRender}">
+        <AB4CD:GMap Height="300px" rendered="{!Runtime.renderClue}" /></AB4CD:GridColumn>
+    </AB4CD:Grid>
+    <AB4CD:Grid rendered="{!Runtime.isRender}">
+      <AB4CD:GridColumn title="New Column" span="1" rendered="{!Runtime.specialRender}">
+        <apex:tabPanel headerAlignment="left" switchType="client" styleClass="tabHeaderClass" activeTabClass="activeTabClass" inactiveTabClass="inactiveTabClass" headerClass="tabHeaderClass" contentclass="tabContentClass" rendered="{!Runtime.renderClue}"></apex:tabPanel>
+      </AB4CD:GridColumn>
+    </AB4CD:Grid>
+  </apex:form>
+  <apex:form rendered="{!Runtime.isRender}" />
+  <AB4CD:LOUT app="c:lcvfTest" comp="ui:button" params="'label':'Clerisoft'" rendered="{!Runtime.specialRender}" />
+</apex:page>

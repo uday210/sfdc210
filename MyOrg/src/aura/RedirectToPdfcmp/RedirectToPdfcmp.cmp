@@ -1,0 +1,6 @@
+<aura:component implements="force:appHostable" access="global" controller="myListview" >
+	
+    <ui:button label="click" press="{!c.Pdf}"/><br/>
+    <ui:button label="show Toast" press="{!c.showToast}"/><br/>
+     <ui:button label="show " press="{!c.gotoList}"/>
+</aura:component>

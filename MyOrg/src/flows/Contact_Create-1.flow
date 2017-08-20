@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <interviewLabel>Contact Create {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Contact Create</label>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <name>Related_Contacts</name>
+        <label>Related Contacts</label>
+        <locationX>130</locationX>
+        <locationY>94</locationY>
+        <inputAssignments>
+            <field>AccountId</field>
+            <value>
+                <elementReference>AccountId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>LastName</field>
+            <value>
+                <stringValue>test</stringValue>
+            </value>
+        </inputAssignments>
+        <object>Contact</object>
+    </recordCreates>
+    <startElementReference>Related_Contacts</startElementReference>
+    <variables>
+        <name>AccountId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <value>
+            <stringValue></stringValue>
+        </value>
+    </variables>
+</Flow>

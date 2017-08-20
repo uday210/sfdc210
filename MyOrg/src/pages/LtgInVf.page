@@ -1,0 +1,90 @@
+<apex:page showHeader="false" sidebar="false">
+      <apex:outputLink value="{!$Site.Prefix}/secur/logout.jsp" rendered="  {!NOT(ISPICKVAL($User.UserType,'Guest'))}">{!$Label.site.logout}</apex:outputLink>
+
+ <!-- This loads the JavaScript file needed to use Lightning Components for Visualforce-->
+    <apex:includeLightning />
+    <div>Hello</div>
+
+    <!-- div tag act as locator while calling Lightning.createComponent -->
+    <div>
+    <div style="width: 35%;" id="lightning" />
+    <div style="width: 65%;" >
+    Hello This IS Uday
+    </div>
+     </div>
+    <script>
+ 
+        $Lightning.use("c:ForSiteGuestUser", function() {
+          $Lightning.createComponent("c:Bot",
+          "",
+          "lightning",
+          function(cmp) {
+            // do some stuff
+          });
+        });
+ 
+    </script>
+    
+    
+    <style>
+    body {
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden !important;
+}
+
+.content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 80px;
+    overflow: scroll;
+}
+
+.footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.author {
+    font-weight: bold;
+}
+
+ dl {
+    padding: 4px 0 4px 0;
+    border-bottom: solid 1px #f4f6f9;
+}
+
+ .list-item {
+    margin: 4px 0 4px 0;
+    border-bottom: solid 1px #f4f6f9;
+}
+
+ .slds-post {
+    border-top: none !important;
+}
+
+ .message-button {
+    display: block;
+    width:100%;
+    margin-top: 4px;
+    margin-left: 0;
+}
+
+ .slds-form-element__label {
+    display: none;
+}
+
+ .slds-file-selector {
+    margin-top: 4px;
+    width: 100% !important;
+}
+
+ .slds-file-selector__dropzone {
+    width: 100% !important;
+}
+    </style>
+</apex:page>

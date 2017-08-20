@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AuthProvider xmlns="http://soap.sforce.com/2006/04/metadata">
+    <authorizeUrl>https://accounts.google.com/o/oauth2/auth?access_type=offline&amp;approval_prompt=force</authorizeUrl>
+    <consumerKey>448730801508-74q8a7atu68r2i7049atpvthukmjatv7.apps.googleusercontent.com</consumerKey>
+    <consumerSecret>IYPt2Qpkb7S88brPlirZon2HPpjvId9hcEEY92ILatc=</consumerSecret>
+    <defaultScopes>openid email profile https://www.googleapis.com/auth/drive</defaultScopes>
+    <executionUser>uday05@icici.com</executionUser>
+    <friendlyName>Google Drive</friendlyName>
+    <iconUrl>https://login.salesforce.com/icons/google-black.png</iconUrl>
+    <includeOrgIdInIdentifier>false</includeOrgIdInIdentifier>
+    <providerType>OpenIdConnect</providerType>
+    <registrationHandler>AutocreatedRegHandler1487501882894</registrationHandler>
+    <sendAccessTokenInHeader>true</sendAccessTokenInHeader>
+    <sendClientCredentialsInHeader>false</sendClientCredentialsInHeader>
+    <tokenUrl>https://accounts.google.com/o/oauth2/accessToken</tokenUrl>
+</AuthProvider>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>User_order</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>User_orders</value>
+    </caseValues>
+    <fields>
+        <label><!-- Amount --></label>
+        <name>Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other Ref Id --></label>
+        <name>Other_Ref_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Responce --></label>
+        <name>Payment_Responce__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Status --></label>
+        <name>Payment_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Transaction ID --></label>
+        <name>Payment_Transaction_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Type --></label>
+        <name>Payment_Type__c</name>
+    </fields>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

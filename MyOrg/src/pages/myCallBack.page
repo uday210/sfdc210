@@ -1,0 +1,85 @@
+<apex:page controller="myCallBack_ctrl">
+<link rel="stylesheet" href="https://www.jqueryscript.net/demo/Lightweight-jQuery-Plugin-For-JSON-Beautifier-Viewer-jjsonviewer/css/jjsonviewer.css" />
+ Code is {!CodeIs } <br/>
+ 
+ Token is {!acc}<br/>
+ 
+ <button class="btn btn-success">do call</button>
+ 
+ 
+ <div>
+ <textarea rows="4" cols="50" class='apxcode'>
+
+</textarea>
+
+
+
+<button class="btn-success" onclick="executeAnonymous();">Execute</button>
+ </div>
+ 
+ <div>
+ >>>>>>
+ <div id="example"></div>
+ </div>
+ <pre id="json-viwer"></pre>
+ 
+ <div id="jjson1" class="jjson"></div>
+ <div id="jjson2" class="jjson"></div>
+<div id="jjson3" class="jjson"></div>
+
+ 
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <script src="//cdnjs.cloudflare.com/ajax/libs/jsforce/1.7.0/jsforce.min.js"></script>
+ <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.1/jquery.min.js"></script>-->
+ <script src="https://www.jqueryscript.net/demo/Lightweight-jQuery-Plugin-For-JSON-Beautifier-Viewer-jjsonviewer/js/jjsonviewer.js"></script>
+ <script>
+ 
+ var jjson = '{"name": "jJsonViewer","author": {"name": "Shridhar Deshmukh","email": "123@gmail.com","contact":[{ "location": "<span>office</span>", "number": 123456},{ "location": "home", "number": 987654 }] }}';
+
+
+ $(".btn").click(function(){
+  
+    
+    
+   var conn = new jsforce.Connection({ accessToken: '{!acc.access_token}' });
+conn.query('SELECT Id, Name FROM Account', function(err, res) {
+  if (err) { return handleError(err); }
+  console.log(res.records);
+  console.log("API Limit: " + conn.limitInfo.apiUsage.limit);
+});
+
+
+conn.apex.get("{!acc.instance_url}/services/data/v39.0", function(err, res) {
+  if (err) { return console.error(err); }
+  console.log("response: ", res);
+  // the response object structure depends on the definition of apex class
+});
+
+});
+
+
+
+function executeAnonymous(){
+
+//alert('qqqq');
+ var conn = new jsforce.Connection({ accessToken: '{!acc.access_token}' });
+     //   var apexBody = jQuery('.apxcode').val();
+    //    alert(apexBody );
+var fullNames = [ 'Account','Contact','Lead' ];
+conn.metadata.read('CustomObject', fullNames, function(err, metadata) {
+  if (err) { console.error(err); }
+  for (var i=0; i < metadata.length; i++) {
+  console.log('AAAAAA');
+    var meta = metadata[i];
+   console.log(meta);
+   
+   var json = meta;
+  // $('#example').html(JSON.stringify(meta));
+   
+$("#jjson"+i).jJsonViewer(JSON.stringify(meta),{expanded: true});
+  }
+});
+
+}
+ </script>
+</apex:page>

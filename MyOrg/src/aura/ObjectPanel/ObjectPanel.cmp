@@ -1,0 +1,12 @@
+<aura:component extensible="true"  controller="ObjectPanelController">
+    <aura:attribute name="objectType" type="string" required="true"/>
+    <aura:attribute name="fields" type="string" required="true"/>
+    
+    <aura:attribute name="records" type="Object[]" />
+    <aura:attribute name="mystring" type="string" />
+    
+    <aura:handler name="init" value="{!this}" action="{!c.myAction}"/>
+    
+    {!v.body}
+
+</aura:component>

@@ -1,0 +1,3 @@
+<design:component >
+    <design:attribute name="objectName" datasource="Account,Contact,Partner_request__c"/>
+</design:component>

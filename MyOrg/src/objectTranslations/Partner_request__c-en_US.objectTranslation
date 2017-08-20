@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Partner_request</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Partner_requests</value>
+    </caseValues>
+    <fields>
+        <label><!-- Accoutn Created --></label>
+        <name>Accoutn_Created__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address1 --></label>
+        <name>Address1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Acceptence --></label>
+        <name>Business_Acceptence__c</name>
+    </fields>
+    <fields>
+        <label><!-- City --></label>
+        <name>City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Company --></label>
+        <name>Company__c</name>
+    </fields>
+    <fields>
+        <label><!-- Completed --></label>
+        <name>Completed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Country --></label>
+        <name>Country__c</name>
+        <relationshipLabel><!-- Partner_requests --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Duplicate Check --></label>
+        <name>Duplicate_Check__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email --></label>
+        <name>Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- First Name --></label>
+        <name>First_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Form Of Organization --></label>
+        <name>Form_Of_Organization__c</name>
+        <picklistValues>
+            <masterLabel>asd</masterLabel>
+            <translation><!-- asd --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>dfg</masterLabel>
+            <translation><!-- dfg --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>fgh</masterLabel>
+            <translation><!-- fgh --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ghj</masterLabel>
+            <translation><!-- ghj --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>hjk</masterLabel>
+            <translation><!-- hjk --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>jkl</masterLabel>
+            <translation><!-- jkl --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>sdf</masterLabel>
+            <translation><!-- sdf --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Head Of Company Title --></label>
+        <name>Head_Of_Company_Title__c</name>
+        <picklistValues>
+            <masterLabel>a</masterLabel>
+            <translation><!-- a --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>b</masterLabel>
+            <translation><!-- b --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>c</masterLabel>
+            <translation><!-- c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>d</masterLabel>
+            <translation><!-- d --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>e</masterLabel>
+            <translation><!-- e --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>f</masterLabel>
+            <translation><!-- f --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Head Of Company --></label>
+        <name>Head_Of_Company__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job Category --></label>
+        <name>Job_Category__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job Title --></label>
+        <name>Job_Title__c</name>
+        <picklistValues>
+            <masterLabel>Architect</masterLabel>
+            <translation><!-- Architect --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CEO</masterLabel>
+            <translation><!-- CEO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CFO</masterLabel>
+            <translation><!-- CFO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sr.Developer</masterLabel>
+            <translation><!-- Sr.Developer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tester</masterLabel>
+            <translation><!-- Tester --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>jr.Developer</masterLabel>
+            <translation><!-- jr.Developer --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Last Name --></label>
+        <name>Last_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Manager Approval --></label>
+        <name>Manager_Approval__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mobile --></label>
+        <name>Mobile__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Years in Business --></label>
+        <name>Number_of_Years_in_Business__c</name>
+        <picklistValues>
+            <masterLabel>0-5</masterLabel>
+            <translation><!-- 0-5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10-15</masterLabel>
+            <translation><!-- 10-15 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5-10</masterLabel>
+            <translation><!-- 5-10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Greater Than 15</masterLabel>
+            <translation><!-- Greater Than 15 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Phone --></label>
+        <name>Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- PostalCode --></label>
+        <name>PostalCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Salutation --></label>
+        <name>Salutation__c</name>
+        <picklistValues>
+            <masterLabel>Dr.</masterLabel>
+            <translation><!-- Dr. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Miss.</masterLabel>
+            <translation><!-- Miss. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mr.</masterLabel>
+            <translation><!-- Mr. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mrs.</masterLabel>
+            <translation><!-- Mrs. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ms.</masterLabel>
+            <translation><!-- Ms. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prof.</masterLabel>
+            <translation><!-- Prof. --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- State --></label>
+        <name>State__c</name>
+    </fields>
+    <fields>
+        <label><!-- type of Record --></label>
+        <name>type_of_Record__c</name>
+    </fields>
+    <fields>
+        <label><!-- website --></label>
+        <name>website__c</name>
+    </fields>
+    <layouts>
+        <layout>Partner_request Layout</layout>
+        <sections>
+            <label><!-- Company Info --></label>
+            <section>Company Info</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Pr Status --></label>
+            <section>Pr Status</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

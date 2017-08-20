@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Order Item</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Order Items</value>
+    </caseValues>
+    <fields>
+        <label><!-- Company Product --></label>
+        <name>Company_Product__c</name>
+        <relationshipLabel><!-- Order Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Individual Piece price --></label>
+        <name>Individual_Piece_price__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order Item Quantity --></label>
+        <name>Order_Item_Quantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- User_order --></label>
+        <name>UseUser_orderr_order__c</name>
+        <relationshipLabel><!-- Order Items --></relationshipLabel>
+    </fields>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

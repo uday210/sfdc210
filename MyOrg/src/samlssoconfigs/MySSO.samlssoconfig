@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SamlSsoConfig xmlns="http://soap.sforce.com/2006/04/metadata">
+    <identityLocation>SubjectNameId</identityLocation>
+    <identityMapping>Username</identityMapping>
+    <issuer>https://auth.miniorange.com/moas</issuer>
+    <loginUrl>https://auth.miniorange.com/moas/idp/samlsso</loginUrl>
+    <logoutUrl>https://newworld-dev-ed.my.salesforce.com</logoutUrl>
+    <name>MySSO</name>
+    <oauthTokenEndpoint>https://newworld-dev-ed.my.salesforce.com/services/oauth2/token?so=00D280000018e2U</oauthTokenEndpoint>
+    <redirectBinding>true</redirectBinding>
+    <requestSignatureMethod>0</requestSignatureMethod>
+    <salesforceLoginUrl>https://newworld-dev-ed.my.salesforce.com?so=00D280000018e2U</salesforceLoginUrl>
+    <samlEntityId>https://newworld-dev-ed.my.salesforce.com</samlEntityId>
+    <samlVersion>SAML2_0</samlVersion>
+    <userProvisioning>false</userProvisioning>
+    <validationCert>MIIDGDCCAgCgAwIBAgIIJ2te7D96Z/MwDQYJKoZIhvcNAQELBQAwTDELMAkGA1UEBhMCSU4xEzARBgNVBAoTCm1pbmlPcmFuZ2UxEzARBgNVBAsTCm1pbmlPcmFuZ2UxEzARBgNVBAMTCm1pbmlPcmFuZ2UwHhcNMTcwNjAzMTc0NTU0WhcNMjcwNjAxMTc0NTU0WjBMMQswCQYDVQQGEwJJTjETMBEGA1UEChMKbWluaU9yYW5nZTETMBEGA1UECxMKbWluaU9yYW5nZTETMBEGA1UEAxMKbWluaU9yYW5nZTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAI8OOaG86t4ujIPiO/4BSYrBw0EKNp+jbWY6IZcuWJfjlvRClAn2uxZFwLEuIcj3K+lKLA9mCor+lZTv7pN42xKbBUxAaGfdC4cbCz314bCKnJ1+6l+l4vt+InOVj1hgukc+ye+BB3RPFc6sAp4YAOU05Q0bYhQBGGsiLH+ojYj3piZQn2AJPtEc6Oq+zJgfzO2WdFobtXj9ZfvEVaCQsVKN9+Y/k8B/LXYjUpys6fuS05qNR+MRHsC6MTjSnH7gb/u+Vrzy75R7UorRsaitbXU/BWEW/hTdpjnYhXXGT+ogud10oUBRx0+HHF6y8q2+mN+oj8zNaaHSGj8jV8uyS3MCAwEAATANBgkqhkiG9w0BAQsFAAOCAQEAUKg7Y6rnaYYrajNwZk/l7w9qFmZ6QuZMxnRSvSbEY2rPHXmsZ1c/gqOU1lP6/6b6kIVXRhsyCfpZrnZbq4zA/dntNORmy1KKw8nGauJJa2l3n2tS5HeVH3AeO4t69WS4tXIKUk4S6OR88Z+jGecTKujIJeCFZUTiGAE39M/l/X/1TKZnSwqvsTyG6wyuMKv4ScfW9+R6fVNvEdFPgUa3Uj5Db/gp7xKrvEnFBgxQowRjlgerHY7pop9HRmQeT3BrNh9kUHogbeMiBvVYbvy9CRnd8dpZNGWpYv+aKxYJO/PHmeH+qojn5B9q2FKFcFkslVxqaTRe0+Y3Nzct+xuDLQ==</validationCert>
+</SamlSsoConfig>

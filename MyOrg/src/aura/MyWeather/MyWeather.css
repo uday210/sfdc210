@@ -1,0 +1,49 @@
+.THIS {
+    text-align: center;
+	left: 0;
+    right: 0;
+    height: 340px;
+    font-weight: 300;
+}
+
+.THIS .location {
+    font-size: 1.5rem;
+	text-transform: uppercase;
+}
+
+.THIS .temperature {
+    font-size: 3.5rem;
+}
+
+.THIS .description {
+  	text-transform: uppercase;
+    margin: 0.5rem 0 0 0;
+}
+
+.THIS table {
+    font-size: 0.9rem;
+    margin: 1rem auto;
+}
+
+.THIS td {
+    padding: 0.3rem;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.THIS .right-align {
+    text-align: right;
+}
+
+.THIS .subtle {
+    color: #999999;
+}
+
+.THIS td img {
+    height: 1.6rem;
+    vertical-align: middle;
+}
+
+.THIS .deg:not(:empty):after {
+    content: '°';
+}

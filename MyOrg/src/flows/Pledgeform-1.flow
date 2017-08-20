@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <choices>
+        <name>X100_Classic</name>
+        <choiceText>$100 Classic</choiceText>
+        <dataType>Currency</dataType>
+        <value>
+            <numberValue>100.0</numberValue>
+        </value>
+    </choices>
+    <choices>
+        <name>X40_Basic</name>
+        <choiceText>$40 Basic</choiceText>
+        <dataType>Currency</dataType>
+        <value>
+            <numberValue>40.0</numberValue>
+        </value>
+    </choices>
+    <choices>
+        <name>X80_medium</name>
+        <choiceText>$80 medium</choiceText>
+        <dataType>Currency</dataType>
+        <value>
+            <numberValue>80.0</numberValue>
+        </value>
+    </choices>
+    <interviewLabel>Pledgeform {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Pledgeform</label>
+    <processType>Flow</processType>
+    <screens>
+        <name>pledge_form</name>
+        <label>pledge form</label>
+        <locationX>122</locationX>
+        <locationY>90</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>Thank_you</targetReference>
+        </connector>
+        <fields>
+            <name>header</name>
+            <fieldText>this is just desdfrfg</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>first_name</name>
+            <dataType>String</dataType>
+            <fieldText>first name</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <fields>
+            <name>last_name</name>
+            <dataType>String</dataType>
+            <fieldText>last name</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <fields>
+            <name>email</name>
+            <dataType>String</dataType>
+            <fieldText>email</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <fields>
+            <name>pledege_level</name>
+            <choiceReferences>X40_Basic</choiceReferences>
+            <choiceReferences>X80_medium</choiceReferences>
+            <choiceReferences>X100_Classic</choiceReferences>
+            <dataType>Currency</dataType>
+            <fieldText>pledege level</fieldText>
+            <fieldType>DropdownBox</fieldType>
+            <isRequired>false</isRequired>
+            <scale>0</scale>
+        </fields>
+    </screens>
+    <screens>
+        <name>Thank_you</name>
+        <label>Thank you</label>
+        <locationX>122</locationX>
+        <locationY>244</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>ThankYou</name>
+            <fieldText>Thanks For Your Donation</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+    </screens>
+    <startElementReference>pledge_form</startElementReference>
+</Flow>

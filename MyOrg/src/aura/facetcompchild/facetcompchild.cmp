@@ -1,0 +1,19 @@
+<aura:component >
+    
+    <div style="color:red">
+   hey this is also body
+    </div>
+	<c:faceparent >
+    <aura:set attribute="header">
+      Hello world this is header  
+      </aura:set>
+    </c:faceparent>
+    
+    
+    <div style="color:red">
+    this is expected in body
+    </div>
+    <div style="color:green">
+   this also  expected in body
+    </div>
+</aura:component>

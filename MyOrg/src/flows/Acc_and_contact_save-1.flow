@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <interviewLabel>Acc and contact save {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Acc and contact save</label>
+    <processType>Flow</processType>
+    <recordCreates>
+        <name>Acc_saving</name>
+        <label>Acc saving</label>
+        <locationX>224</locationX>
+        <locationY>214</locationY>
+        <connector>
+            <targetReference>Contact_Save</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Name</field>
+            <value>
+                <elementReference>Account_name</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Phone</field>
+            <value>
+                <elementReference>Phone</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Account</object>
+    </recordCreates>
+    <recordCreates>
+        <name>contact_save_new</name>
+        <label>contact save new</label>
+        <locationX>244</locationX>
+        <locationY>422</locationY>
+        <connector>
+            <targetReference>Tq</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>LastName</field>
+            <value>
+                <elementReference>LAST_NAME</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Contact</object>
+    </recordCreates>
+    <screens>
+        <name>Acc_Save</name>
+        <label>Acc Save</label>
+        <locationX>216</locationX>
+        <locationY>91</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>Acc_saving</targetReference>
+        </connector>
+        <fields>
+            <name>Account_name</name>
+            <dataType>String</dataType>
+            <fieldText>Account name</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <fields>
+            <name>Phone</name>
+            <dataType>String</dataType>
+            <fieldText>Phone</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+    </screens>
+    <screens>
+        <name>Contact_Save</name>
+        <label>Contact Save</label>
+        <locationX>231</locationX>
+        <locationY>320</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>contact_save_new</targetReference>
+        </connector>
+        <fields>
+            <name>LAST_NAME</name>
+            <dataType>String</dataType>
+            <fieldText>LAST NAME</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+    </screens>
+    <screens>
+        <name>Tq</name>
+        <label>Tq</label>
+        <locationX>246</locationX>
+        <locationY>531</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>tqq</name>
+            <fieldText>Thank You</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+    </screens>
+    <startElementReference>Acc_Save</startElementReference>
+</Flow>

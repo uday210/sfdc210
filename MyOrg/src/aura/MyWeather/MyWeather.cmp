@@ -1,0 +1,31 @@
+<aura:component controller="WeatherController"
+    implements="force:appHostable,flexipage:availableForAllPageTypes,force:hasRecordId">
+
+    <!-- Id of the Account the page hosting this component is showing -->
+    <aura:attribute name="recordId" type="Id" />
+
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+
+    <!-- The current weather and forecast objects returned by the WeatherUnderground service -->
+    <aura:attribute name="currentWeather" type="Object"/>
+    <aura:attribute name="forecast" type="Object"/>
+
+    <div>
+        <img src="{!v.currentWeather.icon_url}" />
+        <div class="location">{!v.currentWeather.display_location.full}</div>
+        <div class="description">{!v.currentWeather.weather}</div>
+        <div class="temperature deg">{!v.currentWeather.temp_f}</div>
+        <table>
+            <aura:iteration items="{!v.forecast.simpleforecast.forecastday}" var="item">
+                <tr valign="middle">
+                    <td>{!item.date.weekday}</td>
+                    <td><img src="{!item.icon_url}" alt=""></img></td>
+                    <td>{!item.conditions}</td>
+                    <td class="right-align deg">{!item.high.fahrenheit}</td>
+                    <td class="right-align subtle deg">{!item.low.fahrenheit}</td>
+                </tr>
+            </aura:iteration>
+        </table>
+    </div>
+
+</aura:component>

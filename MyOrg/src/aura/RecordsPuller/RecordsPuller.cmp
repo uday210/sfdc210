@@ -1,0 +1,22 @@
+<aura:component controller="GenereicRecordPuller" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	<aura:attribute name="objectName" type="String" default="Contact" required="true"/>
+    <aura:attribute name="recList" type="List" />
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <h1>Displaying records {!v.objectName}</h1>
+        <aura:if isTrue="{!v.recList.length > 0}">
+        <table class="slds-table slds-table--bordered slds-table--cell-buffer">
+        <thead>
+            <tr class="slds-text-title--caps">
+             <th scope="col">RecordId</th>
+             <th scope="col">Name</th>
+            </tr>
+        </thead>
+        <aura:iteration items="{!v.recList}" var="item">
+        <tr>
+         <td> {!item.Id}</td>
+            <td> {!item.Name}</td>
+        </tr>
+        </aura:iteration>
+     </table>
+    </aura:if>
+</aura:component>

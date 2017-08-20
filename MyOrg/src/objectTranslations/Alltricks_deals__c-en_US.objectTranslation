@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Alltricks_deals</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Alltricks_deals</value>
+    </caseValues>
+    <fields>
+        <label><!-- Deal_created_On --></label>
+        <name>Deal_created_On__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deal_description --></label>
+        <name>Deal_description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deal_from --></label>
+        <name>Deal_from__c</name>
+        <picklistValues>
+            <masterLabel>Abof</masterLabel>
+            <translation><!-- Abof --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Amazon</masterLabel>
+            <translation><!-- Amazon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Flipkart</masterLabel>
+            <translation><!-- Flipkart --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Others</masterLabel>
+            <translation><!-- Others --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SnapDeal</masterLabel>
+            <translation><!-- SnapDeal --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Deal_image_url --></label>
+        <name>Deal_image_url__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deal_name --></label>
+        <name>Deal_name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Price --></label>
+        <name>Price__c</name>
+    </fields>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

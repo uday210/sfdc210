@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>ApexJobSettings</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>ApexJobSettings</value>
+    </caseValues>
+    <fields>
+        <label><!-- BatchJobClass --></label>
+        <name>BatchJobClass__c</name>
+    </fields>
+    <fields>
+        <label><!-- BatchSize --></label>
+        <name>BatchSize__c</name>
+    </fields>
+    <fields>
+        <label><!-- CronExpression --></label>
+        <name>CronExpression__c</name>
+    </fields>
+    <fields>
+        <label><!-- ScheduledJobClass --></label>
+        <name>ScheduledJobClass__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

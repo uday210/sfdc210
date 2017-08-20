@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>FieldNeedtoUpdate</fullName>
+        <field>Customer_Type__c</field>
+        <literalValue>Platinum</literalValue>
+        <name>FieldNeedtoUpdate</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Gold_Value_Update</fullName>
+        <field>Customer_Type__c</field>
+        <literalValue>Gold</literalValue>
+        <name>Gold Value Update</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Silver_field_Update</fullName>
+        <field>Customer_Type__c</field>
+        <literalValue>Silver</literalValue>
+        <name>Silver field Update</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <rules>
+        <fullName>Populate Customer Type</fullName>
+        <actions>
+            <name>FieldNeedtoUpdate</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.Orders_Amount__c</field>
+            <operation>greaterThan</operation>
+            <value>1000</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Populate Customer Type Gold</fullName>
+        <actions>
+            <name>Gold_Value_Update</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.Orders_Amount__c</field>
+            <operation>lessThan</operation>
+            <value>1000</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Orders_Amount__c</field>
+            <operation>greaterThan</operation>
+            <value>500</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>TestA</fullName>
+        <active>false</active>
+        <criteriaItems>
+            <field>Account.Name</field>
+            <operation>notEqual</operation>
+            <value></value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>customer type silver</fullName>
+        <actions>
+            <name>Silver_field_Update</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.Orders_Amount__c</field>
+            <operation>lessThan</operation>
+            <value>500</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+</Workflow>

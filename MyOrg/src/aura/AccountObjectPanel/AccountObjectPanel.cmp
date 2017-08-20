@@ -1,0 +1,14 @@
+<aura:component extends="c:ObjectPanel">
+    
+    
+    <aura:set attribute="objectType" value="Account"/>
+    <aura:set attribute="fields" value="Id,Name"/>
+   >>> {!v.mystring}
+    <aura:iteration items="{!v.records}" var="rec">
+        <tr>
+            <td>{!rec.Id}</td>
+            <td>{!rec.Name}</td>
+        </tr>
+    </aura:iteration>
+	
+</aura:component>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>feedback</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>feedback</value>
+    </caseValues>
+    <fields>
+        <label><!-- Sentiment_Score --></label>
+        <name>Sentiment_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sentiment --></label>
+        <name>Sentiment__c</name>
+    </fields>
+    <fields>
+        <label><!-- email --></label>
+        <name>email__c</name>
+    </fields>
+    <fields>
+        <label><!-- feedback --></label>
+        <name>feedback__c</name>
+    </fields>
+    <fields>
+        <label><!-- subject --></label>
+        <name>subject__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

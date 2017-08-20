@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <defaultLandingTab>standard-home</defaultLandingTab>
+    <formFactors>Large</formFactors>
+    <tab>standard-Chatter</tab>
+    <tab>standard-UserProfile</tab>
+    <tab>standard-OtherUserProfile</tab>
+    <tab>standard-CollaborationGroup</tab>
+    <tab>standard-File</tab>
+    <tab>OBJ2__c</tab>
+    <tab>Light__c</tab>
+    <tab>Expense__c</tab>
+    <tab>PostOffice__c</tab>
+    <tab>Branch__c</tab>
+    <tab>Student__c</tab>
+    <tab>items__c</tab>
+    <tab>Test__c</tab>
+    <tab>New_Import</tab>
+    <tab>Devices__c</tab>
+    <tab>FKart_Tab</tab>
+    <tab>DemoForm__c</tab>
+    <tab>FormBuilder</tab>
+    <tab>User_order__c</tab>
+    <tab>Company_Product__c</tab>
+    <tab>Partner_request__c</tab>
+    <tab>Country__c</tab>
+    <tab>Fields_Config__c</tab>
+    <tab>Alltricks_deals__c</tab>
+    <tab>External_Data__x</tab>
+    <tab>feedback__c</tab>
+    <tab>Particle__c</tab>
+</CustomApplication>

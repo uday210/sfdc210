@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RemoteSiteSetting xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Setting to allow the OrgLimits Apex Class call the Salesforce REST API
+
+If you use my domain you will need to append &lt;my domain&gt;-- to c. ( example. https://&lt;my domain&gt;--c.visual.force.com )</description>
+    <disableProtocolSecurity>false</disableProtocolSecurity>
+    <isActive>true</isActive>
+    <url>https://c.instance.visual.force.com</url>
+</RemoteSiteSetting>

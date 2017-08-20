@@ -1,0 +1,67 @@
+<apex:page controller="MultiAccSave_ctrl">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<div>
+<button onclick="addrow()">Add Row</button>
+</div>
+<br/>
+<div class="main_div">
+
+    <div class="subdiv">
+   <label >Name</label> <input type="text" class="textfield"/>
+   <label >Piclist 1</label> <select class="picklistA">
+  <option value="A">A</option>
+  <option value="B">B</option>
+  <option value="C">C</option>
+</select>
+<label >Piclist 2</label> <select class="picklistB">
+  <option value="X">X</option>
+  <option value="Y">Y</option>
+  <option value="Z">Z</option>
+</select>
+
+<label >Piclist 3</label> <select class="picklistC">
+  <option value="ASDF">ASDF</option>
+  <option value="SDF">SDF</option>
+  <option value="DFGH">DFGH</option>
+</select>
+    </div>
+</div>
+<div><button onclick="saveData()">Save</button></div>
+
+<script>
+
+function addrow(){
+
+jQuery('.main_div').append('<br/><div class="subdiv"><label >Name</label><input type="text" class="textfield"/> <label >Piclist 1</label><select class="picklistA"><option value="A">A</option><option value="B">B</option>  <option value="C">C</option></select><label >Piclist 2</label> <select class="picklistB"><option value="X">X</option><option value="Y">Y</option><option value="Z">Z</option></select><label >Piclist 3</label> <select class="picklistC"><option value="ASDF">ASDF</option><option value="SDF">SDF</option><option value="DFGH">DFGH</option></select></div>');
+}
+
+var records = [];
+function saveData(){
+
+jQuery('.subdiv').each(function(){
+    
+    var eachRec = {
+    'Name':jQuery(this).find('.textfield').val(),
+    'Piclist_1__c':jQuery(this).find('.picklistA').val(),
+    'Piclist_2__c':jQuery(this).find('.picklistB').val(),
+    'Piclist_3__c':jQuery(this).find('.picklistC').val()
+    
+    }
+    records.push(eachRec );
+    console.log(eachRec );
+
+});
+
+console.log(records);
+
+Visualforce.remoting.Manager.invokeAction('{!$RemoteAction.MultiAccSave_ctrl.save_recrds}',records,function(result, event){
+
+console.log(result);
+location.reload();
+
+});
+
+}
+
+</script>
+</apex:page>

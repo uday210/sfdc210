@@ -1,0 +1,29 @@
+<aura:component controller="IOT" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+
+    
+<!--    <div class="demo-only slds-size_1-of-2">
+  <div class="slds-form-element">
+    <label class="slds-checkbox_toggle slds-grid">
+      <span class="slds-form-element__label slds-m-bottom_none">Toggle Label</span>
+        <input type="checkbox" name="checkbox" aria-describedby="toggle-desc" value="on"  />
+      <span id="toggle-desc" class="slds-checkbox_faux_container" aria-live="assertive">
+        <span class="slds-checkbox_faux"  onclick="{!c.doClick}"></span>
+        <span class="slds-checkbox_on">Enabled</span>
+        <span class="slds-checkbox_off">Disabled</span>
+      </span>
+    </label>
+  </div>
+</div> -->
+    
+     <div class="slds-form-element">
+    <label class="slds-checkbox_toggle slds-grid">
+      <span class="slds-form-element__label slds-m-bottom_none">Led Info</span>
+       <ui:inputCheckbox change="{!c.doClick}" aura:id="led"/>
+      <span id="toggle-desc" class="slds-checkbox_faux_container" aria-live="assertive">
+        <span class="slds-checkbox_faux"></span>
+        <span class="slds-checkbox_on">On</span>
+        <span class="slds-checkbox_off">Off</span>
+      </span>
+    </label>
+  </div>
+</aura:component>

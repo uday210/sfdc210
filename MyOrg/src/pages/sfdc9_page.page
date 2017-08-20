@@ -1,0 +1,24 @@
+<apex:page controller="sfdc9_page_ctrl">
+    <apex:form >
+     <apex:pageMessage rendered="{!!showAddButton}" title="save button Help Text"  summary="you can save Upto 5 Records" severity="warning" strength="3" />
+        <apex:pageMessages />
+    <apex:commandButton action="{!Add_row}" value="Add row" rendered="{!showAddButton}"/>
+    <apex:commandButton action="{!remove_row}" value="Remove Row" rendered="{!showRemoveButton}"/>
+    <table border="1">
+    <thead>
+    <td>Account Name </td>
+    <td>Active </td>
+    <td>Accept </td>
+    </thead>
+    <apex:repeat value="{!LoadTheseAccounts}" var="eachRecord">
+    <tr>
+    <td><apex:inputField value="{!eachRecord.Name}"/></td>
+     <td><apex:inputField value="{!eachRecord.Active__c}"/></td>
+      <td><apex:inputField value="{!eachRecord.Check_Box__c}"/></td>
+    </tr>
+    
+    </apex:repeat>
+    </table>
+    <apex:commandButton action="{!save_records}" value="Save Records"/>
+    </apex:form>
+</apex:page>

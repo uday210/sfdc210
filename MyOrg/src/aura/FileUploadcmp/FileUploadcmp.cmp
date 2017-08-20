@@ -1,0 +1,37 @@
+<aura:component controller="FileController" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	
+    <aura:attribute type="string" name="fileString"/>
+    
+ 
+    <div class="slds-form-element">
+  
+</div>
+    <div>
+    <!-- upload file -->
+         <input type="file" class="file slds-file-selector__button slds-button slds-button_neutral" aura:id="myFile"/>
+        <ui:button label="upload" press="{!c.save}"/>
+    </div>
+    
+    
+    <br/>
+    <div>
+   
+    </div>
+    
+    
+    
+    
+    <div aura:id="container">
+     <table class="slds-table slds-table--bordered slds-max-medium-table--stacked" >
+                                <thead>
+                                   
+                                </thead>
+                                <tbody id="data">
+                                </tbody>
+                            </table>
+    </div>
+    <div>
+        <ui:button label="start Import" press="{!c.startImport}"/>
+    
+    </div>
+</aura:component>

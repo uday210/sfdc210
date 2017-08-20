@@ -1,0 +1,12 @@
+<apex:page controller="sfdc13_ctrl">
+ 
+ 
+ <apex:form >
+ <apex:inputText value="{!BasePrice }"/> <apex:commandButton value="get Conversion Rates" action="{!getMoneyConversion}"/>
+ <br/>
+ 
+  {!currencyConversionData}
+ </apex:form>
+
+ 
+</apex:page>

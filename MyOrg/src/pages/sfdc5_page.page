@@ -1,0 +1,22 @@
+<apex:page controller="sfdc5">
+<apex:form >
+Please Enter Name : <apex:inputText value="{!name}"/>
+<apex:commandButton action="{!sayHello}" value="Say hello"/>
+
+<br/>
+Hello {!name}
+
+<br/>
+
+First Number <apex:inputText value="{!a}"/> Secound Number <apex:inputText value="{!b}"/>
+<apex:commandButton action="{!addNumbers}" value="Add Numbers"/>
+<br/>
+Sum of Two numbers is : {!sum}
+
+<apex:commandButton action="{!changePage}" value="switchPage" rerender="page_pabel"/>
+</apex:form>
+
+<apex:outputPanel id="page_pabel">
+<apex:include pageName="{!pg}"/>
+ </apex:outputPanel> 
+</apex:page>

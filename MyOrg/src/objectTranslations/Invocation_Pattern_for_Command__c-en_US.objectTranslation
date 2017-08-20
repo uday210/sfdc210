@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Invocation Pattern for Command</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Invocation Pattern for Commands</value>
+    </caseValues>
+    <fields>
+        <label><!-- Bot Command --></label>
+        <name>Bot_Command__c</name>
+        <relationshipLabel><!-- Invocation Pattern for Commands --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Invocation Pattern --></label>
+        <name>Invocation_Pattern__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sample Utterance --></label>
+        <name>Sample_Utterance__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

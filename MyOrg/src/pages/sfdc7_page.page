@@ -1,0 +1,31 @@
+<apex:page controller="sfdc7_page_ctrl">
+
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css"/>
+ <table style="width:100%" id="example" border="1" class="display">
+  <thead>
+  <tr>
+    <th>Account Name</th>
+    <th>Tracking Id</th> 
+    <th>Customer Type</th>
+  </tr>
+   </thead>
+  <tbody>
+  <apex:repeat value="{!AllAccounts }" var="eachAcc">
+  <tr>
+    <td>{!eachAcc.Name}</td>
+    <td>{!eachAcc.tackfield__c}</td> 
+    <td>{!eachAcc.Customer_Type__c }</td>
+  </tr>
+ </apex:repeat>
+ </tbody>
+</table>
+<script src="https://code.jquery.com/jquery-1.12.4.js"/>
+<script src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"/>
+ 
+
+<script>
+$(document).ready(function() {
+    $('#example').DataTable();
+} );
+</script>
+</apex:page>

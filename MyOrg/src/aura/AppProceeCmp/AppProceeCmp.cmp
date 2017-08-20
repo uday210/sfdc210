@@ -1,0 +1,51 @@
+<aura:component controller="ApprovalProcess"  implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction"   access="global" >
+    <aura:handler name="init" value="{!this}" action="{!c.doinit}"/>
+    <aura:attribute name="process" type="list"/>
+    <aura:attribute name="process_url" type="String" default="https://newworld-dev-ed.my.salesforce.com/p/process/ProcessInstanceWorkitemWizardStageManager?id="/>
+    
+     
+
+
+    
+    <table class="slds-table slds-table--bordered slds-table--cell-buffer">
+  <thead>
+    <tr class="slds-text-title--caps">
+      
+      <th scope="col">
+        <div class="slds-truncate" title="AppId">Approval Id</div>
+      </th>
+      <th scope="col">
+        <div class="slds-truncate" title="Status">Status</div>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+       <aura:iteration items="{!v.process}" var="item">
+    <tr>
+     
+   
+      <td data-label="AppId">
+          <div class="slds-truncate" > 
+           <table>
+              <aura:iteration items="{!item.StepsAndWorkitems}" var="eachApp">
+               <tr>
+           
+               <!--  <aura:renderIf isTrue="{!eachApp.IsPending}">   -->
+                      <td> <a href="{!v.process_url+eachApp.Id}">{!eachApp.Id}</a></td> 
+                     <td>{!eachApp.TargetObject.Name}</td>
+                     <td>{!eachApp.StepStatus}</td>
+              <!--    </aura:renderIf>  -->
+                  </tr>
+            </aura:iteration>
+          </table>
+          </div>
+      </td>
+      <td data-label="Contact">
+        <div class="slds-truncate" title="Status">{!item.Status}</div>
+      </td>
+    </tr>
+  	  </aura:iteration>
+    
+  </tbody>
+</table>
+</aura:component>

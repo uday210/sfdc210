@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Leave_Application</fullName>
+        <description>Leave Application</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>uday05@icici.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>udaykiran@wipro.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Leaves_templates/Basic_template</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Update_a_field</fullName>
+        <field>Not_Eligible__c</field>
+        <literalValue>1</literalValue>
+        <name>Update a field</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>dd</fullName>
+        <field>Name</field>
+        <formula>Branch__r.Owner:User.CompanyName</formula>
+        <name>d</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <targetObject>Branch__c</targetObject>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>qqqq</fullName>
+        <field>Name</field>
+        <name>qq</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <targetObject>Branch__c</targetObject>
+    </fieldUpdates>
+    <rules>
+        <fullName>Leave approval rule</fullName>
+        <actions>
+            <name>Leave_Application</name>
+            <type>Alert</type>
+        </actions>
+        <actions>
+            <name>Update_a_field</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Student__c.No_Of_leaves__c</field>
+            <operation>greaterOrEqual</operation>
+            <value>3</value>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

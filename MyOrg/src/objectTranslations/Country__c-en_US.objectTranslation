@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Country</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Country</value>
+    </caseValues>
+    <fields>
+        <label><!-- Country Code --></label>
+        <name>Country_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Region --></label>
+        <name>Region__c</name>
+        <picklistValues>
+            <masterLabel>AMERICAS</masterLabel>
+            <translation><!-- AMERICAS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>APJ</masterLabel>
+            <translation><!-- APJ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EC-EMEA</masterLabel>
+            <translation><!-- EC-EMEA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LATAM</masterLabel>
+            <translation><!-- LATAM --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Time Zone --></label>
+        <name>Time_Zone__c</name>
+        <picklistValues>
+            <masterLabel>America/NewYark</masterLabel>
+            <translation><!-- America/NewYark --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Asia/Pacific</masterLabel>
+            <translation><!-- Asia/Pacific --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Country Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

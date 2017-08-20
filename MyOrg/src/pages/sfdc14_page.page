@@ -1,0 +1,7 @@
+<apex:page controller="sfdc14_ctrl">
+  <apex:form >
+  
+  <apex:commandbutton value="get Data" action="{!getData}"/>
+  <br/> {!externalData }
+  </apex:form>
+</apex:page>

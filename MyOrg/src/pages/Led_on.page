@@ -1,0 +1,38 @@
+<apex:page >
+    <body>
+  <center>
+  <br/>
+  <br/>
+  <br/>
+  <form  onsubmit="myFunction()" id="myForm" action="https://api.particle.io/v1/devices/4a0044000f51353532343635/led?access_token=627adcd776daf5bf68df5f5399c2587c28f9cb41" method="POST">
+    Tell your device what to do!<br/>
+    <br/>
+    <input type="radio" name="arg" value="on" onclick="send()"/>Turn the LED on.
+    <br/>
+    <input type="radio" name="arg" value="off" onclick="send()"/>Turn the LED off.
+    <br/>
+    <br/>
+  <!--  <input type="submit" value="Do it!"/>-->
+  </form>
+  </center>
+  </body>
+  
+  <script>
+  function send(e){
+  // e.preventDefault();
+  
+  document.getElementById("myForm").submit();
+  
+  e.preventDefault();
+  }
+  
+  
+  myFunction = function(e) {
+    // prevents default action to happen
+    e.preventDefault();
+    // do what ever you want to do here
+    // i.e. perform a AJAX call
+}
+  
+  </script>
+</apex:page>

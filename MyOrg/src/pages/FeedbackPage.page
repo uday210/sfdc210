@@ -1,0 +1,57 @@
+<apex:page extensions="FeedbackCtrl" standardController="feedback__c" standardStylesheets="false" sidebar="false" showHeader="false">
+<meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<apex:form >
+<div style="width:100%;">
+
+<apex:repeat value="{!AllSentiments }" var="each">
+<div class="col-lg-8 col-lg-offset-1">
+<div class="panel panel-default col-lg-12">
+<div>
+<div class="col-lg-9">
+<apex:outputText escape="false" value="{!each.feedback}"/>
+
+</div>
+    <div class="progress col-lg-3" style="text-align: center; padding: 5px 10px 5px 10px;
+        moz-border-radius: 10px;
+        color: white;
+        font-weight: 700;
+        margin-left: 600%;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        text-align: center;
+        margin: auto;
+        background:{!each.color};
+        box-shadow: 0px 1px 8px {!each.color};" >
+        <span style="position: absolute;margin-top: 40px;margin-left: -20px;">{!each.score}%</span>
+    </div>
+    <div style="text-align: center;color:{!each.color};margin-top: 10px;">
+  </div>     
+    </div>
+    </div>
+    
+</div>
+ </apex:repeat>   
+
+
+</div>
+<div>
+<div class="col-lg-6 col-lg-offset-3">
+ <div class="panel panel-default">
+    <div class="panel-heading">Please Drop You FeedBack About this Product</div>
+    <div class="panel-body">
+    <apex:inputTextarea richText="true" rows="5" value="{!userFb}"/>
+<br/>
+<apex:commandButton action="{!dofeedBack}" value="submit Feed back" styleClass="btn btn-primary"/>
+    </div>
+   
+  </div>
+
+</div>
+</div>
+</apex:form>
+</apex:page>

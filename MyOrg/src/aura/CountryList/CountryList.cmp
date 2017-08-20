@@ -1,0 +1,10 @@
+<aura:component controller="CountryExchangeRates">
+    <aura:handler name="init" value="{!this}" action="{!c.myAction}"/>
+    <aura:attribute name="conversionData" type="list"/>
+	<ui:inputSelect label="Base Currency :" class="dynamic" aura:id="InputSelectDynamic"/>
+    <ui:button label="search" press="{!c.getselectedCounty}"/>
+    
+     <aura:iteration items="{!v.conversionData}" var="rateLst">
+            <li>{!rateLst}</li>
+         </aura:iteration>
+</aura:component>

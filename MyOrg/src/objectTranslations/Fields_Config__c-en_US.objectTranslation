@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Fields Config</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Fields Config</value>
+    </caseValues>
+    <fields>
+        <label><!-- Country --></label>
+        <name>Country__c</name>
+        <relationshipLabel><!-- Fields Config --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- FieldName --></label>
+        <name>FieldName__c</name>
+        <picklistValues>
+            <masterLabel>Address1is</masterLabel>
+            <translation><!-- Address1is --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cityis</masterLabel>
+            <translation><!-- Cityis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Companyis</masterLabel>
+            <translation><!-- Companyis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Emailis</masterLabel>
+            <translation><!-- Emailis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FormofOrganizationis</masterLabel>
+            <translation><!-- FormofOrganizationis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HeadoftheCompanyTitleis</masterLabel>
+            <translation><!-- HeadoftheCompanyTitleis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HeadoftheCompanyis</masterLabel>
+            <translation><!-- HeadoftheCompanyis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lastnameis</masterLabel>
+            <translation><!-- Lastnameis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MobilePhoneis</masterLabel>
+            <translation><!-- MobilePhoneis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Numberofyearsinbusinessis</masterLabel>
+            <translation><!-- Numberofyearsinbusinessis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Phoneis</masterLabel>
+            <translation><!-- Phoneis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PostalCodeis</masterLabel>
+            <translation><!-- PostalCodeis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Salutationis</masterLabel>
+            <translation><!-- Salutationis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Websiteis</masterLabel>
+            <translation><!-- Websiteis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>firstNameis</masterLabel>
+            <translation><!-- firstNameis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>jobCategoryis</masterLabel>
+            <translation><!-- jobCategoryis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>jobtitleis</masterLabel>
+            <translation><!-- jobtitleis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>stateis</masterLabel>
+            <translation><!-- stateis --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Tab --></label>
+        <name>Tab__c</name>
+        <picklistValues>
+            <masterLabel>CompanyTab</masterLabel>
+            <translation><!-- CompanyTab --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CompleteTab</masterLabel>
+            <translation><!-- CompleteTab --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ContactTab</masterLabel>
+            <translation><!-- ContactTab --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FocusTab</masterLabel>
+            <translation><!-- FocusTab --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partner_sectionTab</masterLabel>
+            <translation><!-- Partner_sectionTab --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SegmentTab</masterLabel>
+            <translation><!-- SegmentTab --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ServiceTab</masterLabel>
+            <translation><!-- ServiceTab --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- isMandatory --></label>
+        <name>isMandatory__c</name>
+    </fields>
+    <fields>
+        <label><!-- isRequired --></label>
+        <name>isRequired__c</name>
+    </fields>
+    <layouts>
+        <layout>Fields Config Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Network xmlns="http://soap.sforce.com/2006/04/metadata">
+    <allowMembersToFlag>false</allowMembersToFlag>
+    <branding>
+        <loginFooterText>salesforce.com</loginFooterText>
+        <primaryColor>#1797C0</primaryColor>
+        <primaryComplementColor>#FFFFFF</primaryComplementColor>
+        <quaternaryColor>#B1BAC1</quaternaryColor>
+        <quaternaryComplementColor>#222222</quaternaryComplementColor>
+        <secondaryColor>#51606E</secondaryColor>
+        <tertiaryColor>#DDE4E9</tertiaryColor>
+        <tertiaryComplementColor>#222222</tertiaryComplementColor>
+        <zeronaryColor>#51606E</zeronaryColor>
+        <zeronaryComplementColor>#FFFFFF</zeronaryComplementColor>
+    </branding>
+    <changePasswordTemplate>unfiled$public/CommunityChangePasswordEmailTemplate</changePasswordTemplate>
+    <emailSenderAddress>udaykiran.uday@gmail.com</emailSenderAddress>
+    <emailSenderName>salescommunity</emailSenderName>
+    <enableGuestChatter>false</enableGuestChatter>
+    <enableInvitation>false</enableInvitation>
+    <enableKnowledgeable>false</enableKnowledgeable>
+    <enableNicknameDisplay>false</enableNicknameDisplay>
+    <enablePrivateMessages>false</enablePrivateMessages>
+    <enableReputation>false</enableReputation>
+    <enableSiteAsContainer>false</enableSiteAsContainer>
+    <forgotPasswordTemplate>unfiled$public/CommunityForgotPasswordEmailTemplate</forgotPasswordTemplate>
+    <navigationLinkSet>
+        <navigationMenuItem>
+            <label>Topics</label>
+            <position>1</position>
+            <publiclyAvailable>true</publiclyAvailable>
+            <target>ShowMoreTopics</target>
+            <type>NavigationalTopic</type>
+        </navigationMenuItem>
+    </navigationLinkSet>
+    <networkMemberGroups>
+        <profile>Admin</profile>
+        <profile>Standard</profile>
+        <profile>Myprofile</profile>
+        <profile>My profile new</profile>
+        <profile>Force%2Ecom - Free User new</profile>
+        <profile>System admin1</profile>
+        <profile>Standard Platform User Modified</profile>
+        <profile>Standard User1</profile>
+        <profile>ContractManager</profile>
+        <profile>MarketingProfile</profile>
+        <profile>Custom%3A Support Profile</profile>
+        <profile>Custom%3A Marketing Profile</profile>
+        <profile>Custom%3A Sales Profile</profile>
+        <profile>ReadOnly</profile>
+        <profile>SolutionManager</profile>
+        <profile>Force%2Ecom - Free User</profile>
+        <profile>Partner App Subscription User</profile>
+        <profile>Force%2Ecom - App Subscription User</profile>
+        <profile>Identity User</profile>
+        <profile>Work%2Ecom Only User</profile>
+        <profile>Cross Org Data Proxy User</profile>
+        <profile>StandardAul</profile>
+        <profile>Analytics Cloud Security User</profile>
+        <profile>Analytics Cloud Integration User</profile>
+        <profile>Customer Community Plus Login User</profile>
+        <profile>Chatter Free User</profile>
+        <profile>Customer Portal Manager Standard</profile>
+        <profile>Gold Partner User</profile>
+        <profile>HighVolumePortal</profile>
+        <profile>Silver Partner User</profile>
+        <profile>Customer Community Plus User</profile>
+        <profile>Authenticated Website</profile>
+        <profile>Customer Portal Manager Custom</profile>
+        <profile>Customer Community User</profile>
+        <profile>PlatformPortal</profile>
+        <profile>Partner Community Login User</profile>
+        <profile>Customer Community Login User</profile>
+        <profile>Partner Community User</profile>
+        <profile>External Identity User</profile>
+        <profile>High Volume Customer Portal User</profile>
+        <profile>Chatter Moderator User</profile>
+    </networkMemberGroups>
+    <picassoSite>salescommunity1</picassoSite>
+    <selfRegProfile>platformportal</selfRegProfile>
+    <selfRegistration>true</selfRegistration>
+    <sendWelcomeEmail>true</sendWelcomeEmail>
+    <site>salescommunity</site>
+    <status>Live</status>
+    <tabs>
+        <customTab>AWSKey__c</customTab>
+        <customTab>AWS_Explorer</customTab>
+        <customTab>AWS_S3_Object__c</customTab>
+        <customTab>About_Force_com_Toolkit_for_AWS</customTab>
+        <customTab>Alltricks_deals__c</customTab>
+        <customTab>Bot_Command__c</customTab>
+        <customTab>Branch__c</customTab>
+        <customTab>Company_Product__c</customTab>
+        <customTab>Country__c</customTab>
+        <customTab>DemoForm__c</customTab>
+        <customTab>Devices__c</customTab>
+        <customTab>EC2_Console</customTab>
+        <customTab>EC2_Images</customTab>
+        <customTab>Expense__c</customTab>
+        <customTab>FKart_Tab</customTab>
+        <customTab>Field_Sales_App</customTab>
+        <customTab>Fields_Config__c</customTab>
+        <customTab>FormBuilder</customTab>
+        <customTab>Interactive1</customTab>
+        <customTab>Light__c</customTab>
+        <customTab>Mr_Pr_App_Page</customTab>
+        <customTab>MyLightning</customTab>
+        <customTab>New_Import</customTab>
+        <customTab>OBJ2__c</customTab>
+        <customTab>Partner_Requests</customTab>
+        <customTab>Partner_request__c</customTab>
+        <customTab>PostOffice__c</customTab>
+        <customTab>Real_Time</customTab>
+        <customTab>S3_Samples</customTab>
+        <customTab>Student__c</customTab>
+        <customTab>Test__c</customTab>
+        <customTab>User_order__c</customTab>
+        <customTab>fgfh</customTab>
+        <customTab>items__c</customTab>
+        <customTab>my_ltg_cmp</customTab>
+        <defaultTab>Chatter</defaultTab>
+        <standardTab>Chatter</standardTab>
+        <standardTab>Case</standardTab>
+        <standardTab>Account</standardTab>
+        <standardTab>AppLauncher</standardTab>
+        <standardTab>Asset</standardTab>
+        <standardTab>Campaign</standardTab>
+        <standardTab>Coaching</standardTab>
+        <standardTab>PartnerNetworkConnection</standardTab>
+        <standardTab>Console</standardTab>
+        <standardTab>Contact</standardTab>
+        <standardTab>ContentSearch</standardTab>
+        <standardTab>Contract</standardTab>
+        <standardTab>DandBCompany</standardTab>
+        <standardTab>Dashboard</standardTab>
+        <standardTab>JigsawSearch</standardTab>
+        <standardTab>DuplicateRecordSet</standardTab>
+        <standardTab>WorkFeedbackRequest</standardTab>
+        <standardTab>File</standardTab>
+        <standardTab>GoalV2</standardTab>
+        <standardTab>CollaborationGroup</standardTab>
+        <standardTab>home</standardTab>
+        <standardTab>Idea</standardTab>
+        <standardTab>Lead</standardTab>
+        <standardTab>Workspace</standardTab>
+        <standardTab>LiveAgentSession</standardTab>
+        <standardTab>LiveChatTranscript</standardTab>
+        <standardTab>LiveChatVisitor</standardTab>
+        <standardTab>Macro</standardTab>
+        <standardTab>Metric</standardTab>
+        <standardTab>Opportunity</standardTab>
+        <standardTab>Order</standardTab>
+        <standardTab>OtherUserProfile</standardTab>
+        <standardTab>WorkPerformanceCycle</standardTab>
+        <standardTab>Pricebook2</standardTab>
+        <standardTab>Product2</standardTab>
+        <standardTab>UserProfile</standardTab>
+        <standardTab>ProfilePlatformCoaching</standardTab>
+        <standardTab>ProfilePlatformFeed</standardTab>
+        <standardTab>ProfilePlatformFeedback</standardTab>
+        <standardTab>ProfilePlatformGoals</standardTab>
+        <standardTab>ProfilePlatformOverview</standardTab>
+        <standardTab>QuickText</standardTab>
+        <standardTab>report</standardTab>
+        <standardTab>Sites</standardTab>
+        <standardTab>Solution</standardTab>
+        <standardTab>StreamingChannel</standardTab>
+        <standardTab>ContentSubscriptions</standardTab>
+        <standardTab>UserProvisioningRequest</standardTab>
+    </tabs>
+    <urlPathPrefix>sales</urlPathPrefix>
+    <welcomeTemplate>unfiled$public/CommunityWelcomeEmailTemplate</welcomeTemplate>
+</Network>
